@@ -139,9 +139,9 @@ body{
 
 <?php
 if(isset($_POST['Admin'])){
-	header ('Location: '.'http://localhost/wt/one/admin.php');
+  echo'<script> window.location="admin.php"; </script> ';
 }
 if(isset($_POST['Student'])){
-	header ('Location: '.'http://localhost/wt/one/student.php');
+  echo'<script> window.location="student.php"; </script> ';
 }
 	?>

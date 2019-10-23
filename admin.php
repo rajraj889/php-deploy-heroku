@@ -135,7 +135,7 @@ body{
 
 
 <?php
-require ('config/db.php');
+require ('db.php');
 if(isset($_POST['login'])){
 	$username= mysqli_real_escape_string($conn,$_POST['username']);
 	$password= mysqli_real_escape_string($conn,$_POST['password']);
@@ -156,7 +156,7 @@ $name1=$row0[1];
 $_SESSION['name']=$name1;
 
 
-header ('Location: '.'http://localhost/wt/one/adminpage.php');
+echo'<script> window.location="adminpage.php"; </script> ';
 }
 else{
   echo'try again';

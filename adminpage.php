@@ -1,5 +1,5 @@
 <?php 
-require ('config/db.php');
+require ('db.php');
 session_start();
 $name2=$_SESSION['name'];
 

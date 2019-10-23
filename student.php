@@ -131,7 +131,7 @@ body{
 
 
 <?php
-require ('config/db.php');
+require ('db.php');
 if(isset($_POST['login'])){
 	$user= mysqli_real_escape_string($conn,$_POST['user']);
 	$pass= mysqli_real_escape_string($conn,$_POST['pass']);
@@ -169,7 +169,7 @@ $_SESSION['sem']=$sem1;
 
 
 
-header ('Location: '.'http://localhost/wt/one/studentpage.php');
+echo'<script> window.location="studentpage.php"; </script> ';
 }
 else{
 	echo'try again';
